@@ -1,5 +1,3 @@
-
-
 variable "ami_id" {
   description = "AMI ID to use for instances"
   type        = string

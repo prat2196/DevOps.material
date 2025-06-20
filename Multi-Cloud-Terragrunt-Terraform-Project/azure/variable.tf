@@ -1,4 +1,3 @@
-
 variable "environment" {
   description = "Deployment environment (dev/test/prod)"
   type        = string

@@ -1,4 +1,3 @@
-
 locals {
   project_name          = "my-multi-cloud-project"
   default_aws_region    = "us-east-1"
