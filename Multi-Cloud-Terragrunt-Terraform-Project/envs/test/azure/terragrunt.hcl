@@ -1,4 +1,3 @@
-
 include "root" {
   path = find_in_parent_folders("root.hcl")
 }
@@ -9,15 +8,15 @@ terraform {
 
 inputs = {
   azure_region         = "eastus"
-  environment          = "prod"
-  storage_account_name = "prodmystorageacct"
-  container_name       = "prodcontainer"
+  environment          = "test"
+  storage_account_name = "testmystorageacct"
+  container_name       = "testcontainer"
   account_tier         = "Standard"
   replication_type     = "LRS"
-  location            = "West US"
+  location            = "East US"
   resource_group_name  = "Azure-Test-RG"
   common_tags          = {
-    Environment = "prod"
+    Environment = "test"
     Project     = "my-multi-cloud-project"
   }
 }

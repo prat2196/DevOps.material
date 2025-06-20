@@ -9,15 +9,15 @@ terraform {
 
 inputs = {
   azure_region         = "eastus"
-  environment          = "test"
-  storage_account_name = "testmystorageacct"
-  container_name       = "testcontainer"
+  environment          = "prod"
+  storage_account_name = "prodmystorageacct"
+  container_name       = "prodcontainer"
   account_tier         = "Standard"
   replication_type     = "LRS"
-  location            = "East US"
+  location            = "West US"
   resource_group_name  = "Azure-Test-RG"
   common_tags          = {
-    Environment = "test"
+    Environment = "prod"
     Project     = "my-multi-cloud-project"
   }
 }
